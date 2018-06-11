@@ -1,0 +1,44 @@
+# for frontend
+
+# compiled output
+shower/dist
+shower/tmp
+shower/out-tsc
+
+# dependencies
+shower/node_modules
+shower/package-lock.json
+
+# IDEs and editors
+shower/.idea
+shower/.project
+shower/.classpath
+shower/.c9/
+shower/*.launch
+shower/.settings/
+shower/*.sublime-workspace
+shower/.editorconfig
+
+# IDE - VSCode
+shower/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+shower/.sass-cache
+shower/connect.lock
+shower/coverage
+shower/libpeerconnection.log
+shower/npm-debug.log
+shower/testem.log
+shower/typings
+
+# e2e
+shower/e2e/*.js
+shower/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
