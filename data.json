@@ -1,0 +1,233 @@
+{
+    "_id": ObjectId("5a8d9ae0b1a312096c81f455"),
+    "name": "movilidadEstudiantesExternos",
+    "version": 1,
+    "fields": [{
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                    "key": "nombreEstudiante",
+                    "type": "input",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Nombres del Estudiante",
+                        "placeholder": "Nombres del Estudiante",
+                        "required": true,
+                        "minLength": 2,
+                        "maxLength": 200,
+                        "pattern": /[-?¿!¡(),&*.:\/+\\[\\]\\\\\" a-zA-Z0-9À-ÖØ-öø-ÿ]+/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                        }
+                    }
+                },
+                {
+                    "key": "numeroPasaporte",
+                    "type": "input",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Número de Pasaporte",
+                        "placeholder": "Número de Pasaporte",
+                        "required": true,
+                        "minLength": 2,
+                        "maxLength": 16,
+                        "pattern": /[-. a-zA-Z0-9À-ÿs]+/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                        }
+                    }
+                },
+                {
+                    "key": "nacionalidad",
+                    "type": "select",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "label": "Nacionalidad",
+                        "required": true,
+                        "optionsDB": "LISTA_PAISES"
+                    }
+                }
+            ]
+        },
+        {
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                    "key": "universidadOrigen",
+                    "type": "input",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Universidad de Origen",
+                        "placeholder": "Universidad de Origen",
+                        "required": true,
+                        "minLength": 2,
+                        "maxLength": 800,
+                        "pattern": /[-?¿!¡(),&*.:\/+\\[\\]\\\\\" a-zA-Z0-9À-ÖØ-öø-ÿ]+/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                        }
+                    }
+                },
+                {
+                    "key": "programaAcademicoOrigen",
+                    "type": "input",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Programa Académico de Origen",
+                        "placeholder": "Programa Académico de Origen",
+                        "required": true,
+                        "minLength": 2,
+                        "maxLength": 800,
+                        "pattern": /[-?¿!¡(),&*.:\/+\\[\\]\\\\\" a-zA-Z0-9À-ÖØ-öø-ÿ]+/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                        }
+                    }
+                },
+                {
+                    "key": "tipoMovilidad",
+                    "type": "select",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "label": "Tipo de movilidad",
+                        "required": true,
+                        "optionsDB": "LISTA_TIPOS_MOVILIDAD"
+                    }
+                },
+                {
+                    "key": "tipoIntercambio",
+                    "type": "select",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "label": "Tipo de intercambio",
+                        "required": true,
+                        "optionsDB": "LISTA_TIPOS_INTERCAMBIO"
+                    },
+                    "hideExpression": "(formData) => this.formData.tipoMovilidad != 'Intercambio nacional'"
+                }
+            ]
+        },
+        {
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                    "key": "programaAcademico",
+                    "type": "select",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "label": "Programa Académico - UDEA",
+                        "required": true,
+                        "multiple": true,
+                        "optionsDB": "LISTA_PROGRAMAS_ACADEMICOS"
+                    }
+                },
+                {
+                    "key": "semestre",
+                    "type": "input",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Semestre de inicio",
+                        "placeholder": "Semestre de inicio",
+                        "required": true,
+                        "pattern": /[0-9]+-[1-2]{1}$/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe ser de la forma: 2015-1`"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                    "key": "fechaInicio",
+                    "type": "datepicker",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "required": true,
+                        "type": "text",
+                        "label": "Fecha de Inicio"
+                    }
+                },
+                {
+                    "key": "fechaFin",
+                    "type": "datepicker",
+                    "className": "flex-1",
+                    "templateOptions": {
+                        "required": true,
+                        "type": "text",
+                        "label": "Fecha de Finalización"
+                    }
+                }
+            ]
+        },
+        {
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                    "key": "tipoFinanciacion",
+                    "type": "select",
+                    "className": "flex-0-dot-5",
+                    "templateOptions": {
+                        "label": "Tipo de financiación",
+                        "required": true,
+                        "optionsDB": "LISTA_TIPOS_FINANCIACION"
+                    }
+                },
+                {
+                    "key": "fuentesFinanciacion",
+                    "type": "input",
+                    "className": "flex-0-dot-5",
+                    "templateOptions": {
+                        "type": "text",
+                        "label": "Fuentes de financiación",
+                        "placeholder": "Fuentes de financiación",
+                        "required": false,
+                        "minLength": 2,
+                        "maxLength": 800,
+                        "pattern": /[-?¿!¡(),&*.:\/+\\[\\]\\\\\" a-zA-Z0-9À-ÖØ-öø-ÿ]+/
+                    },
+                    "validation": {
+                        "messages": {
+                            "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                        }
+                    },
+                    "hideExpression": "(formData) => this.formData.tipoFinanciacion != 'Con financiación'"
+                }
+            ]
+        },
+        {
+            "fieldGroupClassName": "display-flex",
+            "fieldGroup": [{
+                "key": "observaciones",
+                "type": "input",
+                "className": "flex-1",
+                "templateOptions": {
+                    "type": "text",
+                    "label": "Observaciones",
+                    "placeholder": "Observaciones",
+                    "required": true,
+                    "minLength": 2,
+                    "maxLength": 800,
+                    "pattern": /[-?¿!¡(),&*.:\/+\\[\\]\\\\\" a-zA-Z0-9À-ÖØ-öø-ÿ]+/
+                },
+                "validation": {
+                    "messages": {
+                        "pattern": "(error, field) => `El campo ${field.templateOptions.label} debe contener solo caracteres alfanuméricos.`"
+                    }
+                }
+            }]
+        }
+    ]
+}

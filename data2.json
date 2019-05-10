@@ -1,0 +1,86 @@
+{
+    "name": "noticias",
+    "description": "Panel de noticias",
+    "type": "generic",
+    "features": {
+        "styles": {
+            "width": "50%",
+            "height": "100px",
+            "background-color": "#ADBEE5",
+            "top": "130px",
+            "left": "0",
+            "color": "#FFF",
+            "text-align": "center"
+        },
+        "content": "Bloque genérico"
+    }
+}
+
+{
+    "name": "incidentes",
+    "description": "Panel de incidentes",
+    "type": "generic",
+    "features": {
+        "styles": {
+            "width": "25%",
+            "height": "65px",
+            "background-color": "#AEEFAE",
+            "top": "250px",
+            "left": "30px",
+            "color": "#FFF",
+            "text-align": "center"
+        },
+        "content": "Bloque genérico"
+    }
+}
+
+{
+    "name": "google",
+    "description": "Esto es un page",
+    "type": "page",
+    "features": {
+        "styles": {
+            "width": "50%",
+            "height": "100%",
+            "top": "0",
+            "right": "0"
+        },
+        "url": "https://ca-sd.suramericana.com/CAisd/pdmweb1.exe",
+        "reload": 5000
+    }
+}
+
+{
+    "name": "jenkins",
+    "description": "Esto es un page",
+    "type": "page",
+    "features": {
+        "styles": {
+            "border": "0",
+            "margin": "0",
+            "width": "50%",
+            "height": "50%",
+            "bottom": "0",
+            "left": "0"
+        },
+        "url": "https://www.youtube.com/embed/OG-5VEvsguY"
+    }
+}
+
+{
+    "name": "indicadores",
+    "description": "Esto es un page",
+    "type": "page",
+    "features": {
+        "styles": {
+            "border": "0",
+            "margin": "0",
+            "width": "50%",
+            "height": "114px",
+            "top": "0",
+            "left": "0",
+            "background-color": "white"
+        },
+        "url": "https://s3.amazonaws.com/dolartoday/data.json"
+    }
+}

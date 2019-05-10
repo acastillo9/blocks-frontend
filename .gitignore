@@ -1,43 +1,43 @@
 # for frontend
 
 # compiled output
-shower/dist
-shower/tmp
-shower/out-tsc
+blocks/dist
+blocks/tmp
+blocks/out-tsc
 
 # dependencies
-shower/node_modules
-shower/package-lock.json
+blocks/node_modules
+blocks/package-lock.json
 
 # IDEs and editors
-shower/.idea
-shower/.project
-shower/.classpath
-shower/.c9/
-shower/*.launch
-shower/.settings/
-shower/*.sublime-workspace
-shower/.editorconfig
+blocks/.idea
+blocks/.project
+blocks/.classpath
+blocks/.c9/
+blocks/*.launch
+blocks/.settings/
+blocks/*.sublime-workspace
+blocks/.editorconfig
 
 # IDE - VSCode
-shower/.vscode/*
+blocks/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
 # misc
-shower/.sass-cache
-shower/connect.lock
-shower/coverage
-shower/libpeerconnection.log
-shower/npm-debug.log
-shower/testem.log
-shower/typings
+blocks/.sass-cache
+blocks/connect.lock
+blocks/coverage
+blocks/libpeerconnection.log
+blocks/npm-debug.log
+blocks/testem.log
+blocks/typings
 
 # e2e
-shower/e2e/*.js
-shower/e2e/*.map
+blocks/e2e/*.js
+blocks/e2e/*.map
 
 # System Files
 .DS_Store
